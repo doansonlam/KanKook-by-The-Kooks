@@ -38,7 +38,7 @@ h1,h2,h3,h4 {
 h1 {
   color: #000;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h2 {
@@ -398,22 +398,18 @@ a.icon {
   background-size: cover;
   background-position: center center;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 100px;
 }
 
-#header .header-thumb {
-  background: #ffffff;
-  border: 10px solid #f9f9f9;
-  padding: 62px 20px 62px 20px;
-}
+
 
 .header-one .header-thumb,
 .header-two .header-thumb,
 .header-three .header-thumb,
 .header-four .header-thumb,
 .header-five .header-thumb {
-  padding: 32px 20px 32px 20px !important;
+  padding: 12px 10px 12px 10px !important;
 }
 
 .header-one, .header-two,
@@ -425,10 +421,10 @@ a.icon {
 }
 
 .header-one {
-  background: url('../images/header-bg.jpg') no-repeat;
+  background: url('../images/photo-1505935428862-770b6f24f629.jpg') no-repeat;
   height: 60vh !important;
   min-height: 520px;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
 }
 .header-two {
   background: url('../images/header-bg.jpg') no-repeat;
@@ -459,6 +455,7 @@ a.icon {
   position: relative;
   overflow: hidden;
   margin: 0;
+  
 } 
 
 #portfolio .portfolio-thumb .portfolio-overlay {
@@ -473,6 +470,7 @@ a.icon {
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  
 }
 
 #portfolio .portfolio-thumb:hover .portfolio-overlay {
@@ -482,6 +480,7 @@ a.icon {
 #portfolio .portfolio-thumb .portfolio-overlay .portfolio-item {
     text-align: center;
     padding: 30% 20px 20px;
+    
 }
 
 #portfolio .portfolio-thumb .portfolio-overlay .fa {
@@ -846,7 +845,7 @@ footer {
     font-size: 1.3rem;
   }
   h3 {
-    font-size: 13px;
+    font-size: 10px;
     letter-spacing: 3px;
   }
 
@@ -869,4 +868,50 @@ footer {
 
 @media (max-width: 450px) {
   .intro-inner {top: 50%;}
+}
+
+.search-box {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background:white;
+  height:50px;
+  border: 1px solid #555555;
+  border-radius:40px;
+  padding: 5px;
+}
+
+.search-box:hover> .search-txt {
+  width:350px;
+  padding:0 15px;
+}
+
+.search-box:hover> .search-btn {
+  background:black;
+}
+
+.search-btn {
+  color:white;
+  float:right;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background: #555555 ;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:0.4s;
+}
+
+.search-txt {
+  border:none;
+  background:none;
+  outline:none;
+  float:left;
+  color:black;
+  font-size:16px;
+  transition:0.4s;
+  line-height:40px;
+  width:0px;
 }
