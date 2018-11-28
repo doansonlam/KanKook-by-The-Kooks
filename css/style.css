@@ -577,7 +577,12 @@ a.icon {
 #single-project img {
   padding-top: 14px;
 }
-
+.project-button{
+  background-color: #000;
+  width: 100px;
+  height: 100px;
+  color:white;
+}
 /* about section styles
 /* ========================================== */
 #about {
