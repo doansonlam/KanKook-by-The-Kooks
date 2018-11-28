@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+      
+      
       <!--
 
 Template 2082 Pure Mix
@@ -17,7 +19,7 @@ http://www.tooplate.com/view/2082-pure-mix
 
       <!-- Site title
    ================================================== -->
-      <title>Pure Mix - HTML CSS Template</title>
+      <title>KanKook - Homepage</title>
 
       <!-- Bootstrap CSS
    ================================================== -->
@@ -44,11 +46,24 @@ http://www.tooplate.com/view/2082-pure-mix
       <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
-<body>
+<body>     
+      <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      </div> 
+<div id="main"> 
+      <!-- Use any element to open the sidenav -->
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+
+
+
 
 
       <!-- Preloader section
-================================================== -->
+      ================================================== -->
       <div class="preloader">
 
             <div class="sk-spinner sk-spinner-pulse"></div>
@@ -57,7 +72,7 @@ http://www.tooplate.com/view/2082-pure-mix
 
 
       <!-- Navigation section
-================================================== -->
+      ================================================== -->
       <div class="nav-container" style="padding-bottom: 10px">
             <nav class="nav-inner transparent">
 
@@ -106,11 +121,11 @@ http://www.tooplate.com/view/2082-pure-mix
                   </div>
 
             </nav>
-      </div>
+      
 
 
       <!-- Header section
-================================================== -->
+      ================================================== -->
       <section id="header" class="header-one">
             <div class="container">
                   <div class="row">
@@ -132,14 +147,13 @@ http://www.tooplate.com/view/2082-pure-mix
             </div>
             <div class="col-md-2"></div>
 
-
-            </div>
-            </div>
+      
+      
       </section>
 
 
       <!-- Portfolio section
-================================================== -->
+ ================================================== -->
       <section id="portfolio">
             <div class="container">
                   <div class="row">
@@ -264,7 +278,7 @@ http://www.tooplate.com/view/2082-pure-mix
       </section>
 
       <!-- Footer section
-================================================== -->
+      ================================================== -->
       <footer>
             <div class="container">
                   <div class="row">
@@ -287,7 +301,8 @@ http://www.tooplate.com/view/2082-pure-mix
                   </div>
             </div>
       </footer>
-
+</div>
+     
 
       <!-- Javascript 
 ================================================== -->
@@ -297,7 +312,19 @@ http://www.tooplate.com/view/2082-pure-mix
       <script src="js/imagesloaded.min.js"></script>
       <script src="js/wow.min.js"></script>
       <script src="js/custom.js"></script>
-
+      <script>/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+      </script>
+      
 </body>
 
 </html>
