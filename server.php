@@ -1,13 +1,17 @@
 <?php
-session_start();
+   
 
-// initializing variables
-$username = "";
-$email    = "";
-$errors = array(); 
+$dbServer = "localhost:3306";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName = "kankook";
 
-// connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'registration');
+$db = new mysqli($dbServer, $dbUsername, $dbPassword, $dbName);
+if ($db->connect_errno)
+{
+  echo "Database connection failed: " . $db->connect_error;
+  exit();
+}
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {

@@ -12,5 +12,4 @@ if ($db->connect_errno)
 	echo "Database connection failed: " . $db->connect_error;
 	exit();
 }
-
 ?>
