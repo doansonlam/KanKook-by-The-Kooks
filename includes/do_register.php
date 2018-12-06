@@ -1,7 +1,11 @@
 <?php
 
   if (isset($_POST['register_req'])) {
+<<<<<<< HEAD
   // receive all input values from the Register.php
+=======
+  // receive all input values from the form
+>>>>>>> 08c78386e91ed96e18455b738c9f565ace5efb40
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $firstName = mysqli_real_escape_string($db,$_POST['firstname']);
   $lastName = mysqli_real_escape_string($db,$_POST['lastname']);
@@ -9,7 +13,12 @@
   $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
   $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
 
+<<<<<<< HEAD
   // Empty() to validate whether the user have entered to required fields
+=======
+  // form validation: ensure that the form is correctly filled ...
+  // by adding (array_push()) corresponding error unto $errors array
+>>>>>>> 08c78386e91ed96e18455b738c9f565ace5efb40
   if (empty($username)) { array_push($errors, "Username is required"); }
   if (empty($firstname)) { array_push($errors, "First name is required"); }
   if (empty($lastname)) { array_push($errors, "Last name is required"); }
@@ -19,13 +28,22 @@
   array_push($errors, "The two passwords do not match");
   }
 
+<<<<<<< HEAD
   // first check the database to make sure the accont does not already exist with the same username and/or email
+=======
+  // first check the database to make sure 
+  // a user does not already exist with the same username and/or email
+>>>>>>> 08c78386e91ed96e18455b738c9f565ace5efb40
   $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
   $result = mysqli_query($db, $user_check_query);
   $user = mysqli_fetch_assoc($result);
   
+<<<<<<< HEAD
   // Retrive query result and verify with 
   if ($user) {
+=======
+  if ($user) { // if user exists
+>>>>>>> 08c78386e91ed96e18455b738c9f565ace5efb40
     if ($user['username'] === $username) {
       array_push($errors, "Username already exists");
     }
