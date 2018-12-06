@@ -33,7 +33,7 @@ USE `kankook`;
 DROP TABLE IF EXISTS `collection`;
 CREATE TABLE IF NOT EXISTS `collection` (
   `collection_id` int(11) NOT NULL AUTO_INCREMENT,
-  `collection_name` varchar(45) COLLATE utf8_bin NOT NULL,
+  `collection_name` varchar(50) COLLATE utf8_bin NOT NULL,
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`collection_id`,`user_id`),
   KEY `fk_collection_users_id` (`user_id`)
@@ -62,15 +62,15 @@ CREATE TABLE IF NOT EXISTS `collection_has_recipes` (
 DROP TABLE IF EXISTS `recipes`;
 CREATE TABLE IF NOT EXISTS `recipes` (
   `recipe_id` int(11) NOT NULL AUTO_INCREMENT,
-  `directions` varchar(1000) COLLATE utf8_bin NOT NULL,
-  `duration` time NOT NULL,
-  `level` varchar(10) COLLATE utf8_bin NOT NULL,
+  `recipe_name` varchar(255) COLLATE utf8_bin NOT NULL UNIQUE,
   `author_name` varchar(225) COLLATE utf8_bin NOT NULL,
   `post_date` datetime NOT NULL,
+  `duration` time NOT NULL,
+  `level` varchar(10) COLLATE utf8_bin NOT NULL,
+  `servings` tinyint(30) NOT NULL,
   `cover_img` varchar(225) COLLATE utf8_bin NOT NULL,
   `video` varchar(225) COLLATE utf8_bin NOT NULL,
-  `servings` tinyint(30) NOT NULL,
-  `recipe_name` varchar(255) COLLATE utf8_bin NOT NULL,
+  `directions` varchar(1000) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`recipe_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -97,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `recipe_has_tags` (
 DROP TABLE IF EXISTS `tags`;
 CREATE TABLE IF NOT EXISTS `tags` (
   `tag_id` int(11) NOT NULL AUTO_INCREMENT,
-  `tag_name` varchar(45) COLLATE utf8_czech_ci NOT NULL,
+  `tag_name` varchar(50) COLLATE utf8_bin NOT NULL UNIQUE,
   PRIMARY KEY (`tag_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
 
@@ -110,14 +110,14 @@ CREATE TABLE IF NOT EXISTS `tags` (
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) COLLATE utf8_bin NOT NULL UNIQUE,
   `firstname` varchar(255) COLLATE utf8_bin NOT NULL,
   `lastname` varchar(255) COLLATE utf8_bin NOT NULL,
-  `description` varchar(500) COLLATE utf8_bin NOT NULL,
-  `email` varchar(255) COLLATE utf8_bin NOT NULL,
+  `email` varchar(255) COLLATE utf8_bin NOT NULL UNIQUE,
   `password` varchar(255) COLLATE utf8_bin NOT NULL,
-  `username` varchar(255) COLLATE utf8_bin NOT NULL,
   `user_pfp` varchar(255) COLLATE utf8_bin NOT NULL,
   `gender` varchar(45) COLLATE utf8_bin NOT NULL,
+  `description` varchar(500) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
@@ -142,8 +142,8 @@ ALTER TABLE `collection_has_recipes`
 -- Constraints for table `recipe_has_tags`
 --
 ALTER TABLE `recipe_has_tags`
-  ADD CONSTRAINT `fk_recipe_id` FOREIGN KEY (`recipe_id`) REFERENCES `recipes` (`recipe_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_tag_id` FOREIGN KEY (`tag_id`) REFERENCES `tags` (`tag_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_tag_has_recipe_id` FOREIGN KEY (`recipe_id`) REFERENCES `recipes` (`recipe_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_recipe_has_tag_id` FOREIGN KEY (`tag_id`) REFERENCES `tags` (`tag_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
