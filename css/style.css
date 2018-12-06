@@ -770,8 +770,11 @@ a.icon {
 /* contact section styles
 /* ========================================== */
 #contact {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  position: auto;
+  padding-left: 250px;
+  
+  
+
 }
 
 #contact .fa {
@@ -779,22 +782,17 @@ a.icon {
   padding-right: 10px;
 }
 
-#contact #map-canvas  {
-  border: none;
-  width: 100%;
-  height: 300px;
-  margin-top: 40px;
-}
 
 #contact .contact-form {
   padding-top: 14px;
+  width: 150%;
 }
 
 #contact .form-control {
   background: transparent;
   border: 1px solid #eee;
   border-radius: 0px;
-  box-shadow: none;
+  box-shadow: black;
   font-size: 16px;
   margin-bottom: 16px;
   transition: all 0.4s ease-in-out;
