@@ -1,8 +1,10 @@
 <?php
+  require("errors.php");
+  require("server.php");
 
   if (isset($_POST['register_req'])) {
   // receive all input values from the Register.php
-  $username = mysqli_real_escape_string($db, $_POST['username']);
+  $userName = mysqli_real_escape_string($db, $_POST['username']);
   $firstName = mysqli_real_escape_string($db,$_POST['firstname']);
   $lastName = mysqli_real_escape_string($db,$_POST['lastname']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
@@ -44,7 +46,7 @@
     mysqli_query($db, $query);
     $_SESSION['username'] = $username;
     $_SESSION['success'] = "You are now logged in";
-    header('location: index.php');
+    header('Location: do_welcome.php');
   }
 }
 ?>
