@@ -44,8 +44,6 @@
     $query = "INSERT INTO users (username, firstname, lastname, email, password) 
           VALUES('$username', '$firstname', '$lastname', '$email', '$password')";
     mysqli_query($db, $query);
-    $_SESSION['username'] = $username;
-    $_SESSION['success'] = "You are now logged in";
     header('Location: do_welcome.php');
   }
 }
