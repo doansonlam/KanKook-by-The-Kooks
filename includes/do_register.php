@@ -42,7 +42,7 @@
     $password = password_hash($password_1,PASSWORD_DEFAULT);//encrypt the password before saving in the database
 
     $query = "INSERT INTO users (username, firstname, lastname, email, password) 
-          VALUES('$username', '$firstname', '$lastname', '$email', '$password')";
+          VALUES('$userName', '$firstName', '$lastName', '$email', '$password')";
     mysqli_query($db, $query);
     header('Location: do_welcome.php');
   }
