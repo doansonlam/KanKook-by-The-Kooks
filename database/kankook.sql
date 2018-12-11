@@ -117,7 +117,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(255) COLLATE utf8_bin NOT NULL,
   `user_pfp` varchar(255) COLLATE utf8_bin NOT NULL,
   `gender` varchar(45) COLLATE utf8_bin NOT NULL,
-  `description` varchar(500) COLLATE utf8_bin NOT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 

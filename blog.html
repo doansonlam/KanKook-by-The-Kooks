@@ -3,7 +3,7 @@
 <head>
 <!--
 
-Template 2082 Pure Mix
+Template 2082 KanKook
 
 http://www.tooplate.com/view/2082-pure-mix
 
@@ -16,7 +16,7 @@ http://www.tooplate.com/view/2082-pure-mix
 
 	<!-- Site title
    ================================================== -->
-	<title>Pure Mix - Blog</title>
+	<title>KanKook - Blog</title>
 
 	<!-- Bootstrap CSS
    ================================================== -->
@@ -42,58 +42,46 @@ http://www.tooplate.com/view/2082-pure-mix
 </head>
 <body>
 
-
-<!-- Preloader section
-================================================== -->
-<div class="preloader">
-
-	<div class="sk-spinner sk-spinner-pulse"></div>
-
-</div>
-
-
-<!-- Navigation section
-================================================== -->
-<div class="nav-container">
-   <nav class="nav-inner transparent">
-
-      <div class="navbar">
-         <div class="container">
-            <div class="row">
-
-              <div class="brand">
-                <a href="index.html">Pure Mix</a>
-              </div>
-
-              <div class="navicon">
-                <div class="menu-container">
-
-                  <div class="circle dark inline">
-                    <i class="icon ion-navicon"></i>
+      <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="login.html">Sign In</a>
+            </div> 
+      <div id="main"><!-- Use any element to open the sidenav -->
+         <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+      
+      
+      <!-- Preloader section
+      ================================================== -->
+      <div class="preloader">
+      
+      <div class="sk-spinner sk-spinner-pulse"></div>
+      
+      </div>
+      
+      
+      <!-- Navigation section
+      ================================================== -->
+      <div class="nav-container">
+      <nav class="nav-inner transparent">
+      
+         <div class="navbar">
+            <div class="container">
+               <div class="row">
+      
+                  <div class="brand">
+                     <a href="index.html">
+                        <img src="images/cce_2@72x-8.png" height="50%" />
+                     </a>
                   </div>
-
-                  <div class="list-menu">
-                    <i class="icon ion-close-round close-iframe"></i>
-                    <div class="intro-inner">
-                     	<ul id="nav-menu">
-                         <li><a href="index.html">Home</a></li>
-                       	 <li><a href="about.html">About</a></li>
-                       	 <li><a href="blog.html">Blog</a></li>
-                       	 <li><a href="contact.html">Contact</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
+               </div>
             </div>
          </div>
+      
+      </nav>
       </div>
-
-   </nav>
-</div>
-
 
 <!-- Header section
 ================================================== -->
@@ -246,6 +234,7 @@ http://www.tooplate.com/view/2082-pure-mix
 
       </div>
    </div>
+</div>
 </section>
 
 <!-- Footer section
