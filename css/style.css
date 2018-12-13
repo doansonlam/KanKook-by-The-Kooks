@@ -780,7 +780,6 @@ a.icon {
 /* ========================================== */
 #contact {
   position: auto;
-  padding-left: 250px;
   
   
 
@@ -794,7 +793,6 @@ a.icon {
 
 #contact .contact-form {
   padding-top: 14px;
-  width: 150%;
 }
 
 #contact .form-control {
