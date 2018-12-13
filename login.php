@@ -2,13 +2,6 @@
 <html lang="en">
 
 <head>
-    <!--
-
-Template 2082 KanKook
-
-http://www.KanKook.com/view/2082-pure-mix
-
--->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,20 +46,7 @@ http://www.KanKook.com/view/2082-pure-mix
 
         <!-- Navigation section
 ================================================== -->
-<<<<<<< HEAD
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="wow fadeInUp col-md-6" data-wow-delay="1.3s">
-                    <h1 style="text-align: center">Log In</h1>
-                    <div class="contact-form">
-                        <form id="contact-form" method="post" action="#">
-                            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-                            <input name="password" type="password" class="form-control" placeholder="Password" required>
-                            <div class="contact-submit">
-                                <input type="submit" class="form-control submit" value="Submit">
-=======
+
         <div class="nav-container" style="padding-top: 10px">
             <nav class="nav-inner transparent">
 
@@ -86,9 +66,8 @@ http://www.KanKook.com/view/2082-pure-mix
                                 <a href="index.html">Home</a>
                                 <a href="about.html">About</a>
                                 <a href="profile-page.html">View profile</a>
-                                <a href="login.html">Log in</a>
-                                <a href="register.html">Sign Up</a>
->>>>>>> d613164e44cf944d5918a07b1523d1206cc1001a
+                                <a href="login.html">Sign in</a>
+                                <a href="register.html">Sign up</a>
                             </div>
 
 

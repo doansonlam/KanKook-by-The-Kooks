@@ -91,28 +91,6 @@ http://www.tooplate.com/view/2082-pure-mix
 					</div>
 				</div>
 			</div>
-<<<<<<< HEAD
-		</div>
-	</div>
-
-</nav>
-</div>
-
-
-<!-- Header section
-================================================== -->
-<section id="header" class="header-four">
-<div class="container">
-	<div class="row">
-
-		<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
-				<div class="header-thumb">
-						<h1 class="wow fadeIn" data-wow-delay="0.6s">Enter the Kitchen</h1>
-						<h3 class="wow fadeInUp" data-wow-delay="0.9s">Create Your Art</h3>
-				  </div>
-		</div>
-=======
->>>>>>> d613164e44cf944d5918a07b1523d1206cc1001a
 
 		</nav>
 	</div>
@@ -152,7 +130,7 @@ http://www.tooplate.com/view/2082-pure-mix
 			<div class="row">
 
 				<div class="col-md-12 col-sm-12">
-					<p class="wow fadeInUp" data-wow-delay="0.3s">Copyright © 2018 Your Company Name - Designed by Tooplate</p>
+					<p class="wow fadeInUp" data-wow-delay="0.3s">Copyright © 2018 Kankook - Designed by The Kooks</p>
 					<ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
 						<li>
 							<a href="#" class="fa fa-facebook"></a>
@@ -166,25 +144,7 @@ http://www.tooplate.com/view/2082-pure-mix
 					</ul>
 				</div>
 
-<<<<<<< HEAD
-<!-- Footer section
-================================================== -->
-<footer>
-<div class="container">
-	<div class="row">
-
-		<div class="col-md-12 col-sm-12">
-			<p class="wow fadeInUp"  data-wow-delay="0.3s">Copyright © 2018 Kankook </p>
-			<ul class="social-icon wow fadeInUp"  data-wow-delay="0.6s">
-				<li><a href="#" class="fa fa-facebook"></a></li>
-				<li><a href="#" class="fa fa-twitter"></a></li>
-				<li><a href="#" class="fa fa-dribbble"></a></li>
-				<li><a href="#" class="fa fa-behance"></a></li>
-				<li><a href="#" class="fa fa-google-plus"></a></li>
-			</ul>
-=======
 			</div>
->>>>>>> d613164e44cf944d5918a07b1523d1206cc1001a
 		</div>
 	</footer>
 	</div>
