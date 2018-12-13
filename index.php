@@ -1,113 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include("includes/header.php")?>
 
-<head>
-
-
-      <!--
-
-Template 2082 KanKook
-
-http://www.tooplate.com/view/2082-pure-mix
-
--->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-
-      <!-- Site title
-   ================================================== -->
       <title>KanKook - Homepage</title>
 
-      <!-- Bootstrap CSS
-   ================================================== -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-
-      <!-- Animate CSS
-   ================================================== -->
-      <link rel="stylesheet" href="css/animate.min.css">
-
-      <!-- Font Icons CSS
-   ================================================== -->
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/ionicons.min.css">
-
-      <!-- Main CSS
-   ================================================== -->
-      <link rel="stylesheet" href="css/style.css">
-
-      <!-- Google web font 
-   ================================================== -->
-      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-</head>
-
-
-
-<div>
-      <!-- Use any element to open the sidenav -->
-
-
-
-
-
-
-      <!-- Preloader section
-      ================================================== -->
-      <div class="preloader">
-
-            <div class="sk-spinner sk-spinner-pulse"></div>
-
-      </div>
-
-
-      <!-- Navigation section
-      ================================================== -->
-      <div class="nav-container" style="padding-top: 10px">
-            <nav class="nav-inner transparent">
-
-                  <div class="navbar">
-                        <div class="container">
-                              <div class="row">
-                                    <div class="brand">
-                                          <div class="brand">
-                                                <a href="index.html">Kankook</a>
-                                          </div>
-                                    </div>
-                                    <div id="mySidenav" class="sidenav">
-                                          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                          <div class="social-icon1" style="text-align: center">
-                                                <a style=" padding-bottom: 50px" href="login.html" class="fa fa-user"></a>
-                                          </div>
-                                          <a href="index.html">Home</a>
-                                          <a href="about.html">About</a>
-                                          <a href="profile-page.html">View profile</a>
-                                          <a href="login.html">Log in</a>
-                                          <a href="register.html">Sign Up</a>
-
-                                    </div>
-
-
-
-                                    <div class="navicon">
-                                          <div class="menu-container">
-                                                <div class="circle dark inline">
-                                                      <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
-                                                </div>
-                                          </div>
-                                    </div>
-
-                              </div>
-                        </div>
-                  </div>
-
-            </nav>
-      </div>
-
+<?php include("includes/nav.php")?>
 
       <!-- Header section
       ================================================== -->
@@ -130,9 +25,7 @@ http://www.tooplate.com/view/2082-pure-mix
                         </div>
                   </div>
                   <div class="col-md-2"></div>
-
-
-
+            </div>
       </section>
 
 
@@ -196,42 +89,5 @@ http://www.tooplate.com/view/2082-pure-mix
                                                 </div>
       </section>
 
-      <!-- Footer section
-      ================================================== -->
-      <footer>
-            <div class="container">
-                  <div class="row">
-
-                        <div class="col-md-12 col-sm-12">
-                              <p class="wow fadeInUp" data-wow-delay="0.3s">Copyright © 2018 KanKook - Designed by The Kooks</p>
-                              <ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
-                                    <li>
-                                          <a href="#" class="fa fa-facebook"></a>
-                                    </li>
-                                    <li>
-                                          <a href="#" class="fa fa-twitter"></a>
-                                    </li>
-                                    <li>
-                                          <a href="#" class="fa fa-google-plus"></a>
-                                    </li>
-                              </ul>
-                        </div>
-
-                  </div>
-            </div>
-      </footer>
-      </div>
-
-
-      <!-- Javascript 
-      ================================================== -->
-      <script src="js/jquery.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/isotope.js"></script>
-      <script src="js/imagesloaded.min.js"></script>
-      <script src="js/wow.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script src="js/sidenav.js"></script>
-      </body>
-
-</html>
+<?php include("includes/footer.php");?>
+ 
