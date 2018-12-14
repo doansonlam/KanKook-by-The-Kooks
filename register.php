@@ -14,6 +14,7 @@
 				<h1 style="text-align: center"> Enter The Kitchen!</h1>
 				<div class="contact-form">
 					<form id="contact-form" method="post" action="#">
+						<input name="username" type="text" class="form-control" placeholder="First Name" required>
 						<input name="firstname" type="text" class="form-control" placeholder="First Name" required>
 						<input name="lastname" type="text" class="form-control" placeholder="Last Name" required>
 						<input name="email" type="email" class="form-control" placeholder="Your Email" required>
