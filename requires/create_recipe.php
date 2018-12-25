@@ -30,6 +30,7 @@ if(isset($_POST['create_rec_req']))
  if (count($errors) == 0) {
         $sql_query = "INSERT INTO collection( collection_name) VALUES('$collectionname')";
 		mysql_query($db,$sql_query);
- 		echo "Collection ". $collectionname " created successfully.";}   
+		 echo "Collection ". $collectionname ." created successfully.";
+ } 
 }
 ?>

@@ -13,6 +13,6 @@ if(isset($_POST['create_col_req']))
  if (count($errors) == 0) {
         $sql_query = "INSERT INTO collection( collection_name) VALUES('$collectionName')";
 		mysql_query($db,$sql_query);
- 		echo "Collection ". $collectionName " created successfully.";}   
+ 		echo "Collection ". $collectionName . " created successfully.";}   
 }
 ?>

@@ -1,6 +1,6 @@
 <?php
    require("server.php");
-   require("errors.php")
+   require("errors.php");
    session_start();
 
   if (isset($_POST['login_req'])) {
