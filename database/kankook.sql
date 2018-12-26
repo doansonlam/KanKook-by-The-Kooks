@@ -107,9 +107,19 @@ CREATE TABLE IF NOT EXISTS `recipe_has_tags` (
 -- --------------------------------------------------------
 
 --
--- Constraints for dumped tables
+-- Create Admin accounts
 --
+CREATE USER IF NOT EXISTS 'Kha_kooks'@'localhost' IDENTIFIED BY 'bits2634.kankook';
+GRANT ALL ON kankook.* TO 'Kha_kooks'@'localhost';
+CREATE USER IF NOT EXISTS 'Thang_kooks'@'localhost' IDENTIFIED BY 'bits2634.kankook';
+GRANT ALL ON kankook.* TO 'Thang_kooks'@'localhost';
+CREATE USER IF NOT EXISTS 'Tai_kooks'@'localhost' IDENTIFIED BY 'bits2634.kankook';
+GRANT ALL ON kankook.* TO 'Tai_kooks'@'localhost';
+CREATE USER IF NOT EXISTS 'Lam_kooks'@'localhost' IDENTIFIED BY 'bits2634.kankook';
+GRANT ALL ON kankook.* TO 'Lam_kooks'@'localhost';
 
+
+ FLUSH PRIVILEGES; 
 --
 -- Constraints for table `saves`
 --
