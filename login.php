@@ -14,11 +14,12 @@
                     <div class="wow fadeInUp col-md-6" data-wow-delay="1.3s">
                         <h1 style="text-align: center">Sign In</h1>
                         <div class="contact-form">
-                            <form id="contact-form" method="post" action="#">
-                                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-                                <input name="passwword" type="password" class="form-control" placeholder="Passwword" required>
+                            <form id="contact-form" method="post" action="/requires/user_login.php">
+                            <?php include("requires/errors.php"); ?>
+                                <input name="username" type="text" class="form-control" placeholder="Username" >
+                                <input name="password" type="password" class="form-control" placeholder="Password" >
                                 <div class="contact-submit">
-                                    <input type="submit" class="form-control submit" value="Submit">
+                                    <input type="submit" class="form-control submit" name="login_req">
                                 </div>
                             </form>
                         </div>

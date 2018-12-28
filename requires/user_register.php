@@ -1,6 +1,8 @@
 <?php
-  require("errors.php");
-  require("server.php");
+ 
+  include_once("errors.php");
+  include_once("server.php");
+
 
   if (isset($_POST['register_req'])) {
   // receive all input values from the Register.php
@@ -22,7 +24,7 @@
   }
 
   // first check the database to make sure the accont does not already exist with the same username and/or email
-  $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
+  $user_check_query = "SELECT * FROM users WHERE username='$username' AND email='$email' LIMIT 1";
   $result = mysqli_query($db, $user_check_query);
   $user = mysqli_fetch_assoc($result);
   
@@ -42,9 +44,9 @@
     $password = password_hash($password_1,PASSWORD_DEFAULT);//encrypt the password before saving in the database
 
     $query = "INSERT INTO users (username, firstname, lastname, email, password) 
-          VALUES('$userName', '$firstName', '$lastName', '$email', '$password')";
+          VALUES('$username', '$firstName', '$lastName', '$email', '$password')";
     mysqli_query($db, $query);
-    header('Location: do_welcome.php');
+    header("Location: ../index.php");
   }
 }
 ?>
