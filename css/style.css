@@ -1158,3 +1158,40 @@ img1 {
 .profile-edit-btn {
   font-weight: 600;
 }
+
+
+/* Admin Sidebar Section */
+/* Admin Sidebar Section */
+/* Admin Sidebar Section */
+.sidebar {
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  z-index: 1000;
+  padding: 225px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-right: 2px solid #343A40;
+}
+
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
