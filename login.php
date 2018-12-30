@@ -19,7 +19,7 @@
                                 <input name="username" type="text" class="form-control" placeholder="Username" >
                                 <input name="password" type="password" class="form-control" placeholder="Password" >
                                 <div class="contact-submit">
-                                    <input type="submit" class="form-control submit" name="login_req">
+                                    <input type="submit" class="form-control submit" name="login_req" Value="LOGIN">
                                 </div>
                             </form>
                         </div>
