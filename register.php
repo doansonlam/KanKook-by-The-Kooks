@@ -1,5 +1,3 @@
-include("DB_credentials.php");
-include("DB_connect.php");
 <?php include("includes/header.php")?>
 	
 	<title>KanKook - Register page</title>
@@ -17,10 +15,14 @@ include("DB_connect.php");
 				<div class="contact-form">
 					<form id="contact-form" method="post" action="requires/user_register.php">
 					<?php include("requires/errors.php"); ?>
-						<input name="username" type="text" class="form-control" placeholder="Username" value="<?php echo $username; ?>" >
-						<input name="firstname" type="text" class="form-control" placeholder="First Name" value="<?php echo $firstname; ?>" >
-						<input name="lastname" type="text" class="form-control" placeholder="Last Name" value="<?php echo $lastname; ?>" >
-						<input name="email" type="email" class="form-control" placeholder="Your Email" value="<?php echo $email; ?>" >
+						<input name="username" class="form-control" type="text"  required placeholder="username"
+							   	oninvalid="this.setCustomValidity('Please enter a username')" oninput="setCustomValidity('')"></input>
+						<input name="firstname" type="text" class="form-control" placeholder="First Name" required=""
+								oninvalid="this.setCustomValidity('Please enter your firstname')" oninput="setCustomValidity('')"></input>
+						<input name="lastname" type="text" class="form-control" placeholder="Last Name" required=""
+								oninvalid="this.setCustomValidity('Please enter your lastname')" oninput="setCustomValidity('')"></input>
+						<input name="email" type="email" class="form-control" placeholder="Your Email" required=""
+								oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="setCustomValidity('')"></input>
 						<input name="password_1" type="password" class="form-control" placeholder="Password" value="<?php echo $password_1; ?>">
 						<input name="password_2" type="password" class="form-control" placeholder="Confirm password" value="<?php echo $password_2; ?>">
 						<div class="contact-submit">

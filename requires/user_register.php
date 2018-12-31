@@ -1,17 +1,13 @@
 <?php
-  session_start();
-  include("DB_credentials.php");
-  include("DB_connect.php");
-
-  $username = "";
-  $firstname = "";
-  $lastname = "";
-  $email    = "";
-  $errors = array(); 
-
-
-
-  if (isset($_POST['register_req'])) {
+  if(isset($_POST['register_req'])) {
+    session_start();
+    include("DB_connect.php");
+  
+    $username = "";
+    $firstname = "";
+    $lastname = "";
+    $email    = "";
+    $errors = array(); 
 
   // receive all input values from the Register.php
   $username = mysqli_real_escape_string($db, $_POST['username']);
@@ -56,6 +52,9 @@
     $_SESSION['username'] = $username;
   	$_SESSION['success'] = "Access Granted";
     header("Location: ../index.php");
+  }
+  else {
+    header("Location: ../register.php");
   }
 }
 ?>
