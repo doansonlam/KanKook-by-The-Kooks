@@ -108,7 +108,20 @@ h3 {
   font-size: 14px;
   letter-spacing: 4px;
 }
-
+.error-message {
+	padding: 7px 10px;
+	background: #fff1f2;
+	border: #ffd5da 1px solid;
+	color: #d6001c;
+	border-radius: 4px;
+}
+.success-message {
+	padding: 7px 10px;
+	background: #cae0c4;
+	border: #c3d0b5 1px solid;
+	color: #027506;
+	border-radius: 4px;
+}
 h5 {
   font-weight: 400;
   letter-spacing: 1px;
