@@ -62,31 +62,83 @@
 
                                                 <div class="iso-box photoshop branding col-md-4 col-sm-6">
                                                       <div class="portfolio-thumb">
-                                                            <img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
+                                                            <img src="images/curry.jpeg" class="img-responsive" alt="Portfolio">
                                                             <div class="portfolio-overlay">
                                                                   <div class="portfolio-item">
                                                                         <a href="recipe-page.html">
                                                                               <i class="fa fa-link"></i>
                                                                         </a>
-                                                                        <h2>Project One</h2>
+                                                                        <h2>Japanese Curry</h2>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="iso-box graphic template col-md-4 col-sm-6">
+                                                      <div class="portfolio-thumb">
+                                                            <img src="images/fried_rice.jpeg" class="img-responsive" alt="Portfolio">
+                                                            <div class="portfolio-overlay">
+                                                                  <div class="portfolio-item">
+                                                                        <a href="recipe-page.html">
+                                                                              <i class="fa fa-link"></i>
+                                                                        </a>
+                                                                        <h2>Fried Rice</h2>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="iso-box photoshop branding col-md-4 col-sm-6">
+                                                      <div class="portfolio-thumb">
+                                                            <img src="images/pho.jpg" class="img-responsive" alt="Portfolio">
+                                                            <div class="portfolio-overlay">
+                                                                  <div class="portfolio-item">
+                                                                        <a href="recipe-page.html">
+                                                                              <i class="fa fa-link"></i>
+                                                                        </a>
+                                                                        <h2>Pho Bo</h2>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="iso-box photoshop branding col-md-4 col-sm-6">
+                                                      <div class="portfolio-thumb">
+                                                            <img src="images/beef_stew.jpeg" class="img-responsive" alt="Portfolio">
+                                                            <div class="portfolio-overlay">
+                                                                  <div class="portfolio-item">
+                                                                        <a href="recipe-page.html">
+                                                                              <i class="fa fa-link"></i>
+                                                                        </a>
+                                                                        <h2>Beef Stew</h2>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="iso-box photoshop branding col-md-4 col-sm-6">
+                                                      <div class="portfolio-thumb">
+                                                            <img src="images/eggplant.jpeg" class="img-responsive" alt="Portfolio">
+                                                            <div class="portfolio-overlay">
+                                                                  <div class="portfolio-item">
+                                                                        <a href="recipe-page.html">
+                                                                              <i class="fa fa-link"></i>
+                                                                        </a>
+                                                                        <h2>Grilled Eggplant</h2>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                <div class="iso-box photoshop branding col-md-4 col-sm-6">
+                                                      <div class="portfolio-thumb">
+                                                            <img src="images/bunbo.jpeg" class="img-responsive" alt="Portfolio">
+                                                            <div class="portfolio-overlay">
+                                                                  <div class="portfolio-item">
+                                                                        <a href="recipe-page.html">
+                                                                              <i class="fa fa-link"></i>
+                                                                        </a>
+                                                                        <h2>Bun Bo Hue</h2>
                                                                   </div>
                                                             </div>
                                                       </div>
                                                 </div>
 
-                                                <div class="iso-box graphic template col-md-4 col-sm-6">
-                                                      <div class="portfolio-thumb">
-                                                            <img src="images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
-                                                            <div class="portfolio-overlay">
-                                                                  <div class="portfolio-item">
-                                                                        <a href="recipe-page.html">
-                                                                              <i class="fa fa-link"></i>
-                                                                        </a>
-                                                                        <h2>Project Two</h2>
-                                                                  </div>
-                                                            </div>
-                                                      </div>
-                                                </div>
       </section>
 
 <?php include("includes/footer.php");?>
