@@ -27,30 +27,20 @@ USE `kankook`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `collection`
+-- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `collection`;
-CREATE TABLE IF NOT EXISTS `collection` (
-  `collection_id` int(11) NOT NULL AUTO_INCREMENT,
-  `collection_name` varchar(50) COLLATE utf8_bin NOT NULL,
-  `user_id` int(11) NOT NULL,
-  PRIMARY KEY (`collection_id`,`user_id`),
-  KEY `fk_collection_users_id` (`user_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `collection_has_recipes`
---
-
-DROP TABLE IF EXISTS `collection_has_recipes`;
-CREATE TABLE IF NOT EXISTS `collection_has_recipes` (
-  `collection_id` int(11) NOT NULL,
-  `recipe_id` int(11) NOT NULL,
-  PRIMARY KEY (`collection_id`,`recipe_id`),
-  KEY `fk_collection_has_recipe_id` (`recipe_id`)
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) COLLATE utf8_bin NOT NULL UNIQUE,
+  `firstname` varchar(255) COLLATE utf8_bin NOT NULL,
+  `lastname` varchar(255) COLLATE utf8_bin NOT NULL,
+  `email` varchar(255) COLLATE utf8_bin NOT NULL UNIQUE,
+  `password` varchar(255) COLLATE utf8_bin NOT NULL,
+  `user_pfp` varchar(255) COLLATE utf8_bin NOT NULL,
+  `gender` varchar(45) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -77,20 +67,6 @@ CREATE TABLE IF NOT EXISTS `recipes` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `recipe_has_tags`
---
-
-DROP TABLE IF EXISTS `recipe_has_tags`;
-CREATE TABLE IF NOT EXISTS `recipe_has_tags` (
-  `recipe_id` int(11) NOT NULL,
-  `tag_id` int(11) NOT NULL,
-  PRIMARY KEY (`recipe_id`,`tag_id`),
-  KEY `fk_tag_id` (`tag_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `tags`
 --
 
@@ -99,43 +75,58 @@ CREATE TABLE IF NOT EXISTS `tags` (
   `tag_id` int(11) NOT NULL AUTO_INCREMENT,
   `tag_name` varchar(50) COLLATE utf8_bin NOT NULL UNIQUE,
   PRIMARY KEY (`tag_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_czech_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `saves`
 --
 
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE IF NOT EXISTS `users` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) COLLATE utf8_bin NOT NULL UNIQUE,
-  `firstname` varchar(255) COLLATE utf8_bin NOT NULL,
-  `lastname` varchar(255) COLLATE utf8_bin NOT NULL,
-  `email` varchar(255) COLLATE utf8_bin NOT NULL UNIQUE,
-  `password` varchar(255) COLLATE utf8_bin NOT NULL,
-  `user_pfp` varchar(255) COLLATE utf8_bin NOT NULL,
-  `gender` varchar(45) COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`user_id`)
+DROP TABLE IF EXISTS `saves`;
+CREATE TABLE IF NOT EXISTS `saves` (
+  `user_id` int(11) NOT NULL,
+  `recipe_id` int(11) NOT NULL,
+  PRIMARY KEY (`user_id`,`recipe_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
---
--- Constraints for dumped tables
---
+-- --------------------------------------------------------
 
 --
--- Constraints for table `collection`
+-- Table structure for table `recipe_has_tags`
 --
-ALTER TABLE `collection`
-  ADD CONSTRAINT `fk_collection_users_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+DROP TABLE IF EXISTS `recipe_has_tags`;
+CREATE TABLE IF NOT EXISTS `recipe_has_tags` (
+  `recipe_id` int(11) NOT NULL,
+  `tag_id` int(11) NOT NULL,
+  PRIMARY KEY (`recipe_id`,`tag_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- --------------------------------------------------------
 
 --
--- Constraints for table `collection_has_recipes`
+-- Create Admin accounts
 --
-ALTER TABLE `collection_has_recipes`
-  ADD CONSTRAINT `fk_collection_has_recipe_id` FOREIGN KEY (`recipe_id`) REFERENCES `recipes` (`recipe_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_recipe_has_collection_id` FOREIGN KEY (`collection_id`) REFERENCES `collection` (`collection_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+CREATE USER IF NOT EXISTS 'Kha_kooks'@'localhost' IDENTIFIED BY 'bits2634.kankook';
+GRANT ALL ON kankook.* TO 'Kha_kooks'@'localhost';
+CREATE USER IF NOT EXISTS 'Thang_kooks'@'localhost' IDENTIFIED BY 'bits2634.kankook';
+GRANT ALL ON kankook.* TO 'Thang_kooks'@'localhost';
+CREATE USER IF NOT EXISTS 'Tai_kooks'@'localhost' IDENTIFIED BY 'bits2634.kankook';
+GRANT ALL ON kankook.* TO 'Tai_kooks'@'localhost';
+CREATE USER IF NOT EXISTS 'Lam_kooks'@'localhost' IDENTIFIED BY 'bits2634.kankook';
+GRANT ALL ON kankook.* TO 'Lam_kooks'@'localhost';
+
+
+ FLUSH PRIVILEGES; 
+--
+-- Constraints for table `saves`
+--
+ALTER TABLE `saves`
+  ADD CONSTRAINT `fk_saves_users_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_saves_recipes_id` FOREIGN KEY (`recipe_id`) REFERENCES `recipes` (`recipe_id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+COMMIT;
 
 --
 -- Constraints for table `recipe_has_tags`

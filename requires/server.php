@@ -1,6 +1,4 @@
 <?php
-   
-
 $dbServer = "localhost:3306";
 $dbUsername = "root";
 $dbPassword = "";
@@ -12,5 +10,4 @@ if ($db->connect_errno)
   echo "Database connection failed: " . $db->connect_error;
   exit();
 }
-
 ?>
