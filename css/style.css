@@ -15,7 +15,16 @@ body {
     font-weight: 300;
     position: relative;
 }
-
+.error {
+	width: 92%; 
+	margin: 0px auto; 
+	padding: 10px; 
+	border: 1px solid #a94442; 
+	color: #a94442; 
+	background: #f2dede; 
+	border-radius: 5px; 
+	text-align: left;
+}
 html,body {
   width: 100%;
   overflow-x: hidden;
@@ -99,7 +108,20 @@ h3 {
   font-size: 14px;
   letter-spacing: 4px;
 }
-
+.error-message {
+	padding: 7px 10px;
+	background: #fff1f2;
+	border: #ffd5da 1px solid;
+	color: #d6001c;
+	border-radius: 4px;
+}
+.success-message {
+	padding: 7px 10px;
+	background: #cae0c4;
+	border: #c3d0b5 1px solid;
+	color: #027506;
+	border-radius: 4px;
+}
 h5 {
   font-weight: 400;
   letter-spacing: 1px;

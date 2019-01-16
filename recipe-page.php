@@ -11,8 +11,7 @@
 
 				<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
 					<div class="header-thumb">
-						<h1 class="wow fadeIn" data-wow-delay="1.6s">Project title</h1>
-						<h3 class="wow fadeInUp" data-wow-delay="1.9s">Nulla scelerisque lectus urna</h3>
+						<h1 class="wow fadeIn" data-wow-delay="1.6s">Japanese Curry</h1>
 					</div>
 				</div>
 
@@ -62,18 +61,16 @@
 
 				<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="2.6s">
 					<h4 class="direction"> Direction </h4>
-					<p>Ut urna turpis, tempor sit amet massa vitae, pulvinar porttitor magna. Pellentesque dolor lorem, blandit ac congue non,
-						mattis a mi. Vestibulum id accumsan neque. Aenean turpis dui, consectetur in ornare quis, sollicitudin vel mauris.
-						Aliquam eros elit, blandit et tortor non, ornare tincidunt ante.</p>
-					<p>Sed quis quam ullamcorper, tincidunt eros vel, malesuada purus. Mauris risus erat, faucibus in aliquam ut, posuere posuere
-						metus. Phasellus eget sem tempus, egestas nisl dapibus, aliquet elit.</p>
+					<p>1.Cut vegetables into bite size pieces. </br>
+					2.Heat oil and brown meat in a pot, then take meat out. </br>
+						3.In the same pot, fry onions for 8 minutes. Add carrots and potatoes, then cooked meat.</br>
+					4.Add water to the pot. After it boils, skim fat, and reduce heat to low. Cover and cook for 45 minutes until the meat becomes tender. </br>
+					5.Remove from heat and add curry sauce mix. Stir well so the pieces of the mix dissolve. </br>
+					If you'd like to use the optional seasonings above, now add the ketchup, worcester sauce, apricot jam, and soy sauce. Let it simmer for 10-15 minutes (cook longer if you'd like it thicker). </br>
+						If you'd like to add the optional curry powder, stir it in just before serving. </br>
+					6.Pour the curry over rice.</p> </br>
 				</div>
-				<div class="wow fadeInUp col-md-7 col-sm-7" data-wow-delay="2.9s">
-					<h4 class="direction"> Description </h4>
-					<p>Ut urna turpis, tempor sit amet massa vitae, pulvinar porttitor magna. Pellentesque dolor lorem, blandit ac congue non,
-						mattis a mi. Vestibulum id accumsan neque. Aenean turpis dui, consectetur in ornare quis, sollicitudin vel mauris.
-						Aliquam eros elit, blandit et tortor non, ornare tincidunt ante.</p>
-					<iframe width="560" height="315" data-wow-delay="3s" src="https://www.youtube.com/embed/NV-3s2wwC8c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					<iframe width="560" height="315" data-wow-delay="3s" src="https://youtu.be/7emvnX9RT1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 					 allowfullscreen></iframe>
 				</div>
 
